@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener </title>
+    <style>
+#div_id1, #div_id2
+{
+background-color: greenyellow;
+padding:25px;
+}
+#p_id1, #p_id2{
+    background-color: white; 
+    font-size: 20px;
+    border: 1px solid;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <h1> Event Bubbling or Event Capturing </h1>
+    <p><b>Event propagation is a way of defining the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first?</b></p>
+        <p>Two types : Bubbling and Capturing </p>
+        <p><b>In bubbling the inner most element's event is handled first and then the outer. whereas, capturing is opposite of bubbling </b></p>
+<br>
+<br>
+<hr>
+<!-- ..... main program -->
+
+<div id="div_id1">  <!-- outer element -->
+    <h2> Bubbling : Inner most element event is handled first, then outer </h2>
+    <p id="p_id1">Click me!</p>  <!-- inner element -->
+</div>
+<br>
+
+<div id="div_id2">    <!-- outer element -->
+    <h2> Capturing : outer most element event is handled first, then inner </h2>
+    <p id="p_id2">Click me!</p>  <!-- inner element -->
+</div>
+<br>
+<h3>With the addEventListener() method you can specify the propagation type by using the "useCapture" parameter:
+<br>
+    addEventListener(event, function, useCapture);
+  <br>  The default value is false, which will use the bubbling propagation, when the value is set to true, the event uses the capturing propagation.</h3>
+ 
+ 
+  <!-- ..................................... -->
+    <script>
+document.getElementById("p_id1").addEventListener("click", function() {
+  alert("You clicked the white element!");
+}, false);
+
+document.getElementById("div_id1").addEventListener("click", function() {
+  alert("You clicked the greenyellow element!");
+}, false);
+
+document.getElementById("p_id2").addEventListener("click", function() {
+  alert("You clicked the white element!");
+}, true);
+
+document.getElementById("div_id2").addEventListener("click", function() {
+  alert("You clicked the greenyellow element!");
+}, true);
+    </script>
+</body>
+</html>

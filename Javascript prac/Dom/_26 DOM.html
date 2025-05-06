@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+</head>
+<body> <!-- this is comment -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Info</li>
+        </ul>
+    </nav>
+
+    <!-- .......................................... ...................................-->
+    <script>
+        // change background color of first child to yellow
+        // it work when you write on console of html "changebg()" and press enter.
+    const changebg =() => {
+        document.body.firstElementChild.style.background="yellow";
+    }
+        let a = document.body;
+        
+        console.log("first child of a is:", a.firstChild);
+        console.log("last Elementchild of a is:", a.lastElementChild);
+        console.log("first ElementChild of a is ", a.firstElementChild);
+    
+    </script>
+    
+</body>
+</html>

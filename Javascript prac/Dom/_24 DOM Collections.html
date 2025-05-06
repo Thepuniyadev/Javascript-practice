@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript HTML DOM Collections </title>
+</head>
+<body>
+    <h1> The HTMLCollection Object  </h1>
+
+    <!-- The getElementsByTagName() method returns an HTMLCollection object.
+
+An HTMLCollection object is an array-like list (collection) of HTML elements.
+
+The following code selects all <p> elements in a document: -->
+
+   <!-- An HTMLCollection is NOT an array!
+
+An HTMLCollection may look like an array, but it is not.
+
+You can loop through the list and refer to the elements with a number (just like an array).
+
+However, you cannot use array methods like valueOf(), pop(), push(), or join() on an HTMLCollection.
+
+ -->
+        <p id="p1"> hello i am pawan </p>
+        <p id="p2"> I learn js </p>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+    <button onclick="func()"> click it to add a new paragraph </button>
+    <hr>
+    <button onclick="func1()">Click it to know the total paragraph </button>
+    <hr>
+    <button onclick="func2()">Click it to change the color of text</button>
+
+    <script>
+        function func()
+        {
+            // getElementByTagName("p") is collection of all p
+     const collection = document.getElementsByTagName("p");
+     document.getElementById('demo').innerHTML="add : "+collection[0].innerHTML;
+
+        }
+
+        function func1()
+        {
+            const myCollection = document.getElementsByTagName("p");
+
+              document.getElementById("demo1").innerHTML = "This document contains " + myCollection.length + " paragraphs.";
+        }
+
+        function func2() {
+  const myCollection = document.getElementsByTagName("p");
+  for (let i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.color = "red";
+  }
+}
+    </script>
+</body>
+</html>

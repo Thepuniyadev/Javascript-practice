@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="final.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="screen">
+      <input type="text" name="screen" id="screen" value = "">
+    </div>
+
+    <div id="keys">
+      <div id="c1">
+       
+        <input button class="btn1 button" name="Delete" value="Del" onclick="deletechar() "></button>
+        <input button class="btn1 button bt1" name="Answer" Value="Ans" onclick="calculate()"></button>
+      </div> <!-- end of c1 div -->
+
+      <div id="c2">
+        <input button class="btn2 button" name="n1" value="1" onclick="display('1')"></button>
+        <input button class="btn2 button" name="n2" value="2" onclick="display('2')"></button>
+        <input button class="btn2 button" name="n3" value="3" onclick="display('3')"></button>
+        <input button class="btn2 button" name="n4" value="4" onclick="display('4')"></button>
+      </div> <!-- end of c2 div -->
+
+
+      <div id="c3">
+        <input button class="btn3 button" name="n5" value="5" onclick="display('5')"></button>
+        <input button class="btn3 button" name="n6" value="6" onclick="display('6')"></button>
+        <input button class="btn3 button" name="n7" value="7" onclick="display('7')"></button>
+        <input button class="btn3 button" name="n8" value="8" onclick="display('8')"></button>
+      </div> <!-- end of c3 div -->
+
+      <div id="c4">
+        <input button class="btn4 button" name="n9" value="9" onclick="display('9')"></button>
+        <input button class="btn4 button" name="n0" value="0" onclick="display('0')"></button>
+        <input button class="btn4 button" name="lp" value="&#40" onclick="display('&#40')"></button>
+        <input button class="btn4 button" name="rp" value="&#41" onclick="display('&#41')"></button>
+      </div> <!-- end of c3 div -->
+
+      <div id="c5">
+        <input button class="btn5 button" name="add" value="+" onclick="display('+')"></button>
+        <input button class="btn5 button" name="minus" value="-" onclick="display('-')"></button>
+        <input button class="btn5 button" name="mul" value="*" onclick="display('*')"></button>
+        <input button class="btn5 button" name="div" value="/" onclick="display('/')"></button>
+      </div> <!-- end of c5 div -->
+
+      <div id="c6">
+        <input button class="btn6 button" name="percent" value="%" onclick="percentage()"></button>
+        <input button class="btn6 button" name="pie" value="&#8508" onclick="display('3.14159265359')"></button>
+        <input button class="btn6 button" name="root" value="&#8730"  onclick="sqrt(value)"></button>
+        <input button class="btn6 button" name="log" value="ln" onclick="ln(value)"></button>
+      </div> <!-- end of c6 div -->
+
+
+
+      <div id="c8">
+        <!-- <input button class="btn8 button" name="xpow" value="X^" onclick="exponent()"></button> -->
+        <input button class="btn8 button" name="xpow2" value="X^2"onclick="xpow2(value)"></button>
+        <!-- <input button class="btn8 button" name="e" value="e" onclick=""></button> -->
+        <!-- <input button class="btn8 button" value="inv" onclick=""></button> -->
+
+      </div> <!-- end of c7 div -->
+
+      <div id="c7">
+        <input button class="btn7 button" name="fact" value="!" onclick="factorial()"></button>
+        <input button class="btn7 button" name="sin" value="sin" onclick="sin(value)"></button>
+        <input button class="btn7 button" name="Cos" value="cos" onclick="cos(value)"></button>
+        <input button class="btn7 button" name="tan" value="tan" onclick="tan(value)"></button>
+
+      </div> <!-- end of c7 div -->
+
+      <div id="c9">
+        <input button class="btn9 button" value="AC" onclick="clearScreen()"></button>
+        <input button class="btn9 button" name="equal" value="=" onclick="calculate()"></button>
+        <input button class="btn9 button" name="decimal" value="&#46" onclick="display('&#46')"></button>
+      </div>
+
+
+
+    </div> <!-- end of screen div -->
+  </div> <!-- end of container div -->
+</body>
+
+</html>

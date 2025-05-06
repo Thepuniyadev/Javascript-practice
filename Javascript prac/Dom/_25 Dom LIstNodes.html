@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<body>
+
+    <!-- The HTML DOM NodeList Object
+A NodeList object is a list (collection) of nodes extracted from a document.
+
+A NodeList object is almost the same as an HTMLCollection object.
+
+Some (older) browsers return a NodeList object instead of an HTMLCollection for methods like getElementsByClassName().
+
+All browsers return a NodeList object for the property childNodes. 
+
+Most browsers return a NodeList object for the method querySelectorAll(). -->
+<h2>JavaScript HTML DOM</h2>
+
+<p>Hello World!</p>
+
+<p>Hello PAWAN!</p>
+
+<p id="demo"></p>
+
+<script>
+const myNodelist = document.querySelectorAll("p");
+
+document.getElementById("demo").innerHTML = "The innerHTML of the second paragraph is: " + myNodelist[1].innerHTML;
+
+</script>
+
+</body>
+</html>
+</body>
+</html>

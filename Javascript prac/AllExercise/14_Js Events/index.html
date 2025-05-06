@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_Events</title>
+    <link rel="shortcut icon" href="./fav14.png" type="image/x-icon">
+</head>
+<body>
+    <h2>An onclick events change an html element</h2>
+
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+     <hr> <br> <br> 
+    <h2>An onclick events change its own html element</h2>
+    
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+    <hr> <br> <br> 
+
+    <h2>An onclick events call a function</h2>
+    <button onclick="displayDate()">The time is?</button>
+    <script>
+        function displayDate() {
+          document.getElementById("do").innerHTML = Date();
+        }
+        </script>
+        
+        <p id="do"></p>
+</body>
+</html>

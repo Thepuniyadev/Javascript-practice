@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM Model</title>
+</head>
+<body>
+    <h1>The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.</h1>
+    <p id="id1"></p>
+    <p id="id2"></p>
+
+    <script>
+        // Two properties can be used to determine the size of the browser window.
+
+       // window.innerWidth - the inner width of the browser window (in pixels)
+       document.getElementById("id1").innerHTML= "Browser inner width : "+ window.innerWidth +"px";
+       // window.innerHeight - the inner height of the browser window (in pixels)
+       document.getElementById("id2").innerHTML= "Browser inner height : "+ window.innerHeight +"px";
+
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice 5-1</title>
+</head>
+<body>
+    <br> <br>
+    <button onclick="func1()"><b> Click it to see alert messages </b></button> <br> <hr> <br> 
+    
+    <button onclick="func2()"><b> Click it to confirm the messages </b></button> <br> 
+    <p id="demo"></p> <hr> <br> 
+
+    <button onclick="func3()"><b> Click it to prompt message</b></button> <br> 
+    <p id="demo1"></p> <hr> <br> 
+
+    <hr> <br>
+
+    <h1>Bookmarks</h1>
+    <a href="http://google.com"><button>Google</button></a>
+    <a href="http://twitter.com"><button>twitter</button></a>
+    <a href="http://facebook.com"><button>Facebook</button></a>
+
+    <!--.............................. ..... -->
+    <script>
+        /// alert message
+        function func1()
+        {
+            alert("Welcome to Pratice 5-1");
+        }
+        // confirm 
+        function func2()
+        {
+            let text;
+            if(confirm("Do you really want to leave"))
+            {
+                text="Ok! try next time"
+            }
+            else {
+                text="Let learn the js "
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+        // prompt
+        function func3() {
+  let txt;
+  let person = prompt("Please enter your name:", "Name");
+  if (person == null || person == "" || person == "Name") {
+    txt = "Please write you name";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo1").innerHTML = txt;
+}
+    </script>
+</body>
+</html>
+
+<!-- q1. Write a program to show different alerts when different buttons are clicked -->

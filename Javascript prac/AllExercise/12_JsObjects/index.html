@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Objects</title>
+    <link rel="shortcut icon" href="./fv12.png" type="image/x-icon">
+</head>
+<body>
+    
+<h2>You have 2 values 6 and 8 : </h2>
+ 
+
+
+<p id="d1"></p>
+
+<button id="Adder" onclick="Sum()">Click to Add</button> <br> <hr>
+
+<button id="Sub" onclick="Minus()">Click to Subtract</button> <br> <hr>
+
+<button id="mul" onclick="Guda()">Click to Multiply</button> <br> <hr>
+
+<button id="div" onclick="Bhag()">Click to Divide</button> <br> <hr>
+
+    <!-- .......... -->
+
+    <script>
+        // create an Object 
+      const Airthemetic = {
+       Add: function()
+       {
+        return (6+8);
+       },
+       sub: function()
+       {
+        return (6-8);
+       },
+       mul: function()
+       {
+        return (6*8);
+       },
+       div: function()
+       {
+        return (6/8);
+       }
+    };
+    // document.getElementById("d1").innerHTML = Airthemetic.Add();
+
+    function  Sum(){
+        document.getElementById("d1").innerHTML = Airthemetic.Add();
+    }
+
+    function  Minus(){
+        document.getElementById("d1").innerHTML = Airthemetic.sub();
+    }
+
+    function  Guda(){
+        document.getElementById("d1").innerHTML = Airthemetic.mul();
+    }
+
+    function  Bhag(){
+        document.getElementById("d1").innerHTML = Airthemetic.div();
+    }
+    </script>
+</body>
+</html>
+
+<!-- Summarize:
+ Here, we basically paas function as a object
+ 
+-->

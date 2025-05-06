@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM_1</title>
+</head>
+<body>
+    <h1> Java validation form </h1>
+    <!-- let create a form -->
+    <p><b>1. first form</b></p>
+    <form name="form1" action="#" onsubmit="return valid()" method="post">
+    Name : <input type="text" name="fname">
+    <input type="submit" value="submit"> 
+</form>
+<hr>
+
+<p><b> 2. second form</b></p>
+<form action="#" method="post">
+ Name :  <input type="text" name="ffname" required>
+    <input type="submit" value="submit">
+</form>
+<p>If you click submit, without filling out the text field,
+    your browser will display an error message.</p>
+<hr>
+<hr>
+<h3>Some Other defination </h3>
+<p style="font-size: 25px; color: blue;">
+    onsubmit : a form is sumbited <br>
+    method : The HTTP method that the browser uses to submit the form. Possible values are post,get,dialog <br>
+    post : form data are included in the body of the form and sent to the server.
+</p>
+
+<!-- ..................................................... -->
+    <script>
+function valid()
+{
+    let x = document.forms["form1"]["fname"].value;
+    if(x==""){
+        alert("Name must be filled out first ");
+        return false;
+    }
+}
+    </script>
+</body>
+</html>

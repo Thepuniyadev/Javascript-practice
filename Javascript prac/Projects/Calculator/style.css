@@ -1,0 +1,144 @@
+body{
+    background-color: darkcyan;
+}
+.container
+{
+    border: 2px solid black;
+    position: relative;
+
+    width:425px;
+    background-color: #c0c0c0;
+    box-shadow: 0px 0px 0px 10px #666;
+    border-radius: 2rem;
+    margin: auto;
+    height: 630px;
+    top: 29px;
+}
+.display
+{
+    margin: 11px;
+    border: 2px solid whitesmoke;
+    background-color: #585454;
+    text-align: end;
+    font-size: 37px;
+    padding-right: 12px;
+    height: 63px;
+    border-radius: 0.7rem;
+}
+
+#screen{
+    color: white;
+    background-color: black;
+    width: 379px;
+    height: 64px;
+    margin-left: 20px;
+    margin-top: 22px;
+    text-align: right;
+    font-size: medium;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+#keys{
+    margin: auto;
+    padding: 21px;
+    border: 2px solid rgba(128, 128, 128, 0.511);
+    border-radius: 0.7rem;
+    position: relative;
+    width: 344px;
+    height: 464px;
+    display: grid;
+    top: 14px;
+
+
+}
+.btn1
+{
+    background-color: rgba(67, 61, 65, 0.27);
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 7px 23px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 18px;
+    margin: 4px 1px;
+    cursor: pointer;
+    width: 30px;
+}
+ /* .bt1{
+    float: right;
+ } */
+
+ #c1,#c2,#c3,#c4,#c5,#c6,#c7,#c8,#c9{
+    display: flex;
+    justify-content: center;
+   justify-items: center;
+   justify-content: space-between;
+   margin-bottom: 6.5px;
+   width: inherit;
+ }
+
+.btn2,.btn2,.btn3,.btn4,.btn5,.btn6,.btn7,.btn8,.btn9
+{
+    background-color: rgba(67, 61, 65, 0.27);
+    border: 3px solid black;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 7px 23px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 18px;
+    margin: 4px 1px;
+    cursor: pointer;
+    width: 30px;
+   
+}
+.btn7{
+    width: 35px;
+}
+.btn9{
+    width: 35px;  
+}
+
+.btn1:active
+{
+    background-color: rgb(173, 183, 155);
+}
+
+.btn2:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn3:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn4:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn5:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn6:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn7:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn8:active
+{
+    background-color: rgb(173, 183, 155);
+}
+.btn9:active
+{
+    background-color: rgb(173, 183, 155);
+}

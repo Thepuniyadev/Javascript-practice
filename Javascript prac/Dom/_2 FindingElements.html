@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Finding HTML ELEMENTS </title>
+</head>
+<body>
+    <!-- by id name -->
+    <h1>Here, we see, finding Html elements </h1>
+    <p><b> 1. BY ID : getElementById(); </b></p>
+    <hr>
+
+    <!-- by tag name -->
+    <p><b>2. By tag name : getElementByTagName</b></p>
+    <p id="demo2"><b></b></p>
+    <hr>
+
+    <!-- by class name -->
+<p class="intro1"><b> By class name : getElementByClassName</b></p>
+<p class="intro1">successful print</p>
+<p id="demo3"><b></b></p>
+<hr>
+
+<!-- by css selectors -->
+<p class="intro2"><b> By queerySelectorAll() </b></p>
+<p class="intro2"> " done "</p>
+<p id = "demo4"><b></b></p>
+<hr>
+
+ <!-- -------------------------------------------------------------------------------------------------- -->
+    <script>
+// by tag name: getElementByTag name access all paragraph in html, and we add paragraph 1 in demo by name[index].innerHTML
+const element = document.getElementsByTagName("p");
+document.getElementById("demo2").innerHTML = 'call any paragraph by '+element[1].innerHTML
+
+// by class name: getElementByClassName() returns a list of all elements with class="intro"
+const x = document.getElementsByClassName("intro1");
+document.getElementById("demo3").innerHTML = 
+'The first paragraph (index 1) with class="intro1" is: ' + x[1].innerHTML;
+
+// by queryselector : If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelectorAll() method.
+const y = document.querySelectorAll("p.intro2")
+document.getElementById("demo4").innerHTML = 
+'The first paragraph (index 0) with class="intro" is: ' + y[0].innerHTML;
+</script>
+
+
+
+</body>
+</html>

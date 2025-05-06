@@ -1,0 +1,41 @@
+<!-- Task to make percentage to cgp calculator -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Functions</title>
+   
+</head>
+<body>
+    <h2>Your Overall marks: </h2>
+     First Semester : <input type="number" id="fs" value="0"> <br><br><br>
+     Second Semester : <input type="number" id="ss" value="0"> <br><br><br>
+     Third Semester : <input type="number" id="ts" value="0">  <br><br><br>
+     Fourth Semester : <input type="number" id="frs" value="0"> <br><br><br>
+     Fifth Semester : <input type="number" id="ffs" value="0">  <br><br><br>
+     Sixth Semester : <input type="number" id="sxs" value="0"> <br><br><br>
+     Seventh Semester : <input type="number" id="sts" value="0"> <br><br><br>
+     Eighth Semester : <input type="number" id="es" value="0"> <br><br><br>
+
+     <h1 id="d1"></h1>
+
+     <button type="button" onclick="percentage()">Click it to calculate Percentage</button>
+
+
+     <!-- .................................. -->
+     <script>
+     function percentage()
+     {
+        const x =0;
+        x = document.getElementById("fs").value + document.getElementById("ss").value +document.getElementById("ts").value + document.getElementById("fs").value + document.getElementById("ffs").value + document.getElementById("sxs").value + document.getElementById("sts").value + document.getElementById("es").value;
+         const tt= 900;
+        return const op = (x/900*100);
+       
+     }
+     document.getElementById("d1").innerHTML = op;
+    </script>
+</body>
+</html>

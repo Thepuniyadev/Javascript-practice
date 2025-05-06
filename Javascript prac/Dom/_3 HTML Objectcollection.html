@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+</head>
+
+<body>
+    <h1>JS HTML DOM </h1>
+    <p>Finding HTML ELEMents using <b>documents.form</b></p>
+    <!-- create a form -->
+    <form id="form1" action="#">
+        First Name : <input type="text" name="fname" value="Pawan">
+        <br>
+        <br>
+        Last Name : <input type="text" name="lname" value="Chaukiyal">
+        <br> <br>
+        <input type="submit" value="sumbit">
+
+        <p>So, the elements of this form are : </p>
+        <p>Pawan<br>Chaukiyal<br>Sumbit</p>
+        <p> i.e all values</p>
+        <hr>
+
+        <p id="demo"></p>
+
+        <hr>
+    </form>
+
+    <script>
+        const x = document.forms["form1"];
+        let text = "";
+        for (let i = 0; i < x.length; i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+
+</html>

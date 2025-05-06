@@ -1,0 +1,37 @@
+<!-- A callback is a function passed as an argument to another function This technique allows a function to call another function.
+A callback function can run after another function has finished -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+<body>
+    <h1><u>Function Sequence. </u></h1>
+    <p style="font-size: large;"><b>Javascript function are executed in the sequence they are called</b></p>
+    <p id="id1"></p>
+
+    <!-- .......................................... -->
+    <script>
+        // func1 declarae 
+        function func1(txt)
+        {
+            document.getElementById("id1").innerHTML = txt;
+        }
+        function func2() // func 2 create
+        {
+           func1 ("hello");// function 1 call and paas the argument 
+        }
+        function func3()
+        {
+             func1("By func 3"); // call func 1 and paas the argument 
+            
+        }
+        func2(); // call func 2
+        func3(); // call fun 3
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatypes</title>
+    <link rel="shortcut icon" href="./fv11.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Datatypes</h1>
+    <br />
+    <hr />
+
+    <h2>1.. Declare (create) Strings</h2>
+    <p id="p1"></p>
+    <br />
+    <hr />
+
+    <h2>1.. Declare (create) numbers</h2>
+    <p id="p2"></p>
+    <br />
+    <hr />
+
+    <h2>1.. Declare (create) an array</h2>
+    <p id="p3"></p>
+    <br />
+    <hr />
+
+    <h2>1.. Declare (create) an object</h2>
+    <p id="p4"></p>
+    <!-- ............................................................  -->
+    <script>
+      const a1 = "Paragraph 1";
+      const a2 = "Paragraph 2";
+      const a3 = "Paragraph 3";
+      document.getElementById("p1").innerHTML = a1 + "<br>" + a2 + "<br>" + a3;
+
+      const x = 2,
+        y = 8;
+      document.getElementById("p2").innerHTML =
+        "The Sum of X And y is : " + (x + y);
+
+      const arr = ["Apple", "Cucumber", "Papaya", "Orange"];
+      document.getElementById("p3").innerHTML = "The fibre fruits are : " + arr;
+
+      const [pr1,pr2,pr3] = 
+      [
+
+          { firstName: "John", lastName: "Doel", age: 50, eyeColor: "blue"},
+          { firstName: "ramesh", lastName: "bhatt", age: 30, eyeColor: "black"},
+          { firstName: "geetanjali", lastName: "kr", age: 20, eyeColor: "black"},
+    
+      ] ;
+
+      document.getElementById("p4").innerHTML =
+      "Info of person 1 is : " + pr1.firstName + " is " + pr1.age + " years old." + "<br>" + 
+      "Info of person 2 is : " + pr2.firstName + " is " + pr2.age + " years old." + "<br>" + 
+      "Info of person 3 is : " + pr3.firstName + " is " + pr3.age + " years old." + "<br>" ;
+    </script>
+  </body>
+</html>

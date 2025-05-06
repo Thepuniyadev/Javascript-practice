@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM NODES</title>
+</head>
+<body>
+    <h1>Creating new HTML Elements - insertBefore()</h1>
+       <!-- The appendChild() method in the previous example, appended the new element as the last child of the parent.
+
+If you don't want that you can use the insertBefore() method: -->
+    <div id="div1">
+        <p id="p1"> hello i am pawan </p>
+        <p id="p2"> I learn js </p>
+    </div>
+        <!-- .................................................... -->
+        <script>
+        // creates a new <p> element:
+            const para = document.createElement("p");
+        // To add text to the <p> element, you must create a text node first.
+            const node = document.createTextNode("Day 23 for js");  
+            // Then you must append the text node to the <p> element:  
+                para.appendChild(node);
+                // Finally you must append the new element to an existing element.
+    
+                // This code finds an existing element:
+                const element = document.getElementById("div1");
+
+                const child = document.getElementById("p1");
+                element.insertBefore(para,child);
+       </script>
+    </body>
+    </html>

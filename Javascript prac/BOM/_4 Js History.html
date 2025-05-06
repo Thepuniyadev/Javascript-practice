@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+   <h1>JavaScript Window History</h1>
+   <hr> 
+   <p>Window history back </p>
+   <input type="button" value="Back" onclick="goback()">
+   <hr>
+
+   <p> The history.forward() method loads the next URL in the history list.
+
+    This is the same as clicking the Forward button in the browser.
+    
+    </p>
+    <input type="button" value="Forward" onclick="goforward()">
+   <script>
+
+    function goback()
+    {
+        window.history.back();
+    }
+
+    function goforward()
+    {
+        window.history.forward();
+    }
+   </script>
+</body>
+</html>

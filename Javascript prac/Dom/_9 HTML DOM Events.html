@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS HTML DOM Events</title>
+</head>
+<body>
+  <h1 onclick="this.innerHTML='Virat'">click to see the first name </h1> 
+    <hr>
+
+    <!-- calling from function -->
+<p onclick="change(this)"> <b> Click to see the last name </b></p> 
+<!-- here this is fixed not be changed -->
+<hr>
+
+<!-- let see the dATE -->
+<button onclick="displaydate()">The time is ?</button>
+<p id="demo"></p>
+
+<!-- ....................................................................... -->
+
+<script>
+    
+    function change(id){
+        id.innerHTML="Kholi";
+    }
+    // for date
+    function displaydate(){
+        document.getElementById("demo").innerHTML = Date();
+    }
+</script>
+</body>
+</html>

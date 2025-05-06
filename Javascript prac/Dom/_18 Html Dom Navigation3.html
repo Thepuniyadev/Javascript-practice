@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h01"> 1 The nodeName Property </h1> 
+    <h1 id="h02"> 2 The nodeType Property</h1>
+    <p id="p01"></p>
+    <p id="p03"></p>
+
+    <script>
+        // The nodeName property specifies the name of a node.
+        document.getElementById("p01").innerHTML=document.getElementById("h01").nodeName;
+       // The nodeType property is read only. It returns the type of a node.
+        document.getElementById("p03").innerHTML = document.getElementById("h02").nodeType;
+    </script>
+</body>
+</html>

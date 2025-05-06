@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Instead of passing the name of a function as an argument to another function, you can always pass a whole function instead: -->
+
+    <h2 id="id1"></h2>
+    <!--.............................................................  -->
+    <script>
+        setTimeout(                              // paas whole function
+                 function func1()   /// used as a callback
+                 {
+                    func2("this func call inside the another func");
+                 }  , 5000
+        );
+
+      function  func2(txt)
+        {
+          document.getElementById("id1").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

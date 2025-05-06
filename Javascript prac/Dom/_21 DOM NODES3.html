@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM NODES</title>
+</head>
+<body>
+    <h1>Removing Existing HTML Elements</h1>
+       <!-- To remove an HTML element, use the remove() method:-->
+    <div id="div1">
+        <p id="p1"> hello i am pawan </p>
+        <p id="p2"> I learn js </p>
+    </div>
+
+    <button onclick="func()"> Remove Element </button>
+
+        <!-- .................................................... -->
+        <script>
+        function func()
+        {
+            document.getElementById("p1").remove();
+        }
+
+       </script>
+    </body>
+    </html>

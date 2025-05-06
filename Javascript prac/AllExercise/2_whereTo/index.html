@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where_to?</title>
+    <link rel="icon" type="ch2" href="./fv2.png">
+   <!-- 1 -->
+   <script>
+        function myheadfunc(){
+            document.getElementById("p1").innerHTML="content changed!";
+        }
+    </script>
+    <!-- 1 -->
+
+    <!-- 3 -->
+    <script src="./outscript.js"></script>
+    <!-- 3 -->
+</head>
+<body >
+    <div id="m-div">
+  <h1>Where to Javascript</h1> 
+  <br> 
+  <hr>
+
+
+  <h3> 1..] Javascript in head</h3> 
+  <p id="p1">  This content is change by js which is Written in head. check in 1</p>
+  <button onclick="myheadfunc()">Click it</button>
+  <br>
+   <hr>
+
+
+   <h3> 2..] Javascript in body</h3> 
+  <p id="p2"> This content is change by js which is Written in body</p>
+  <button onclick="mybodyfunc()"">Click it</button>
+  <br>
+   <hr>
+
+  <h3> 3..] Javascript in an external file</h3>
+  <p id="p3"> This content is change by js which is done externally "Outscript.js "</p>
+  <button onclick="myextfunc()"">Click it</button>
+  <br> 
+  <hr>
+
+
+  <h3> 4..] Javascript in an external url</h3>
+
+  <p id="p4">A Paragraph.</p>
+  <button type="button" onclick="myexturlFunction()">Click Me</button>
+
+  <p>This example uses a full web URL to link to which i give here.</p>
+  <p>(myFunction is stored in script which is also possible to link other site)</p>
+  
+  <script src="http://127.0.0.1:5500/2_whereTo/index.html"></script>
+  <br> <hr>
+ 
+
+<!-- 2 -->
+<script>
+
+  function mybodyfunc() {
+            document.getElementById("p2").innerHTML="content changed!";
+        }
+</script>
+<!-- 2 -->
+
+<!-- 3 -->
+<script>
+function myexturlFunction() {
+    document.getElementById("demo").innerHTML="Paragraph changed.";
+}
+</script>
+<!-- 3 -->
+</body>
+</html>
+
+<!-- Summarize:
+
+    here, i learn how to link javascript with doc externally and internally
+
+-->

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Doom Root Nodes : </h1>
+<p>
+    <b> properties which allow to acess the full document </b><br>
+    document.body - The body of the document<br>
+    document.documentElement - The full document
+</p>
+
+<p id="p01"> </p>
+
+<p id ="p02"> </p>
+    <!-- ................................................. -->
+    <script>
+        // print body of the document
+document.getElementById("p01").innerHTML= document.body.innerHTML
+       // print the full document
+       document.getElementById("p02").innerHTML= document.documentElement.innerHTML    
+
+    </script>
+    </body>
+</body>
+</html>

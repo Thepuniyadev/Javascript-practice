@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p id="id1"></p>
+
+    <script>.
+    // funct1 declare
+        function func1(value)
+        {
+            document.getElementById("id1").innerHTML=value;
+        }
+
+        // calc function  declare
+        function calc(num1,num2,callback) // num1->9, num2->5 , callback-> func1
+        {
+          var sum = num1 + num2;
+          callback(sum); // callback call mean func1 call and sum paas as a argument
+        }
+        
+        // calc function call
+        calc(9,5,func1); // 9,5 , func1 as argument passed
+       
+        //
+       //q Right: myCalculator(5, 5, myDisplayer);
+    </script>
+</body>
+</html>

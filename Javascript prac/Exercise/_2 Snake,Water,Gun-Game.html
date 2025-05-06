@@ -1,0 +1,64 @@
+<!-- FAil -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Of Snake ,water and Gun </title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1> Snake , Water And Gun Game </h1>
+
+    <h1>Enter substance from snake,water and gun</h1>
+    
+    <form> 
+        <input type="button" onclick="myfunction('Snake')" value="Click to select Snake"> 
+        <input type="button" onclick="myfunction('Water')" value="Click to select Water"> 
+        <input type="button" onclick="myfunction('Gun')" value="Click to select Gun">
+      </form> 
+    <!-- ............................................. -->
+    <script>
+       
+function myfunction(txt)
+{
+    let user = txt;
+    let CPU1 = Math.floor(Math.random()*3);
+    let Cpu = ["Snake","Water","Gun"][CPU1];
+
+    const match(Cpu1,user) => 
+    {
+        if(Cpu==user) {
+        return "Nobody";
+     }
+     else if(Cpu === "Snake" && user === "Water"){
+        return "CPU";
+     }
+     else if(Cpu === "Snake" && user === "Gun"){
+        return "user";
+     }
+     else if(Cpu === "Water" && user === "Snake"){
+        return "user";
+     }
+     else if(Cpu === "Water" && user === "Gun"){
+        return "CPU";
+     }
+     else if(Cpu === "Gun" && user === "Water"){
+        return "User";
+     }
+     else if(Cpu === "Gun" && user === "Snake"){
+        return "CPU";
+     }
+    }
+ 
+    let result = match(Cpu,user);
+   document.Write(`CPU:${Cpu} <br> User:${user} <br> The Winner is : ${result.toUpperCase()}`);
+}
+
+
+    </script>
+</body>
+</html>

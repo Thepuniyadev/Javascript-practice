@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the browser cookies </title>
+</head>
+<body onload="checkcookie()">
+    <h1>ONload and onunload event </h1>
+    <p><b>The onload and onunload events are triggered when the user enters or leaves the page.</b></p>
+    <p><b>The onload and onunload events can be used to deal with cookies.</b></p>
+
+    <p id="demo"></p>
+
+    <HR> 
+        
+        <!-- now see the onchange event -->
+
+<h1>onchange event</h1>
+<p><b>it change the text to uppercase or lowercase.</b></p>
+
+Enter your name: <input type="text" id="fname" onchange="upperCase()">
+
+
+        <!-- ....................................................... -->
+    <script>
+        function checkcookie()
+        {
+            var text; 
+            // (property) NavigatorCookies.cookieEnabled: boolean
+            if(navigator.cookieEnabled==true)
+            {
+                text="Cookies are enabled";
+            }
+            else{
+                text="Cookies are not be enabled";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+            // for upper case... to change in lowecase change toLowercase() instead of toUpperCase() in js
+            function upperCase()
+             {
+  const x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+        
+    </script>
+</body>
+</html>

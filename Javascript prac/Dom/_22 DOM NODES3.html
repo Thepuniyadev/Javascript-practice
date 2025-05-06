@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM NODES</title>
+</head>
+<body>
+    <!-- This HTML document contains a <div> element with two child nodes (two <p> elements): -->
+    <h1>Removing a Child Node</h1>
+       <!-- For browsers that does not support the remove() method, you have to find the parent node to remove an element:-->
+    <div id="div1">
+        <p id="p1"> hello i am pawan </p>
+        <p id="p2"> I learn js </p>
+    </div>
+
+    <button onclick="func()"> Remove Element </button>
+
+        <!-- .................................................... -->
+        <script>
+        function func()
+        {
+            // Find the element with id="div1":
+            const parent = document.getElementById("div1");
+            // Find the <p> element with id="p1":
+            const child = document.getElementById("p1");
+            // Remove the child from the parent
+            parent.removeChild(child);
+        }
+
+       </script>
+    </body>
+    </html>

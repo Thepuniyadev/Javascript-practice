@@ -1,0 +1,5 @@
+git http: https://github.com/Pawanchaukiyal/Javascript-pratice.git
+
+git alias name : js
+
+git branch name : master

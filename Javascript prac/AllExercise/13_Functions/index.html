@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Functions</title>
+    <link rel="shortcut icon" href="./fv13.png" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Basic Form Where i use function which trigger on click btton and automatic fill the <form action=""></form></h1>
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" value=""> <br>
+        
+        <label for="address">Address:</label><br> 
+        <input type="text" id="ad" value=""> <br><br>
+
+        <button type="button" onclick="automatic('Pawan','chaukiyal')">Click it</button> <br> <br> <br>
+
+
+      </form>
+      
+      
+      
+
+      <h1>Second Address</h1>
+      <form> 
+         <label for="second_address">Second-Address:</label><br> 
+        <input type="text" id="d-a" value=""> <br><br>
+      </form>
+      <button type="button" onclick="as()">Click it for same address</button>
+      <script>
+
+        function automatic(f,l){
+          document.getElementById('fname').value=f;
+          document.getElementById('lname').value=l;
+          
+        }
+        function as()
+        {
+          
+           document.getElementById('d-a').value=ad.value;
+        }
+      </script>
+</body>
+</html>

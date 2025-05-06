@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <h1>element.addEventListener(event, function, useCapture);</h1>
+    <p>The first parameter is the type of the event (like "click" or "mousedown" or any other HTML DOM Event.)<br>
+        The second parameter is the function we want to call when the event occurs.<br>
+        he third parameter is a boolean value specifying whether to use event bubbling or event capturing. This parameter is optional<br></p>
+        <br> <br>
+        <hr>
+ 
+ 
+        <p><b> 1 . This example uses the addEventListener() method to attach a click event to a button.</b></p>
+        <button id="id1">Click btn1</button>
+<hr>
+
+<!-- next -->
+
+<p><b>Add Many Event Handlers to the Same Element</b></p>
+<button id="id2">click btn2</button>
+
+<br>
+<hr>
+<!-- next -->
+<button id="id3"> Button 3 </button>
+<p id="demo"></p>
+
+<!-- ............................... -->
+    <script>
+        // 1
+document.getElementById("id1").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
+
+//2 This example uses the addEventListener() method to add two click events to the same button. 
+let x = document.getElementById("id2");
+x=addEventListener("click",func1);
+x=addEventListener("click",func2);
+function func1(){
+    alert("hi");
+}
+function func2(){
+    alert("BY");
+}
+
+// 3 
+var y = document.getElementById("id3");
+y.addEventListener("mouseover", myFunction);
+y.addEventListener("click", mySecondFunction);
+y.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML += "Moused over!<br>";
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML += "Clicked!<br>";
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML += "Moused out!<br>";
+}
+    </script>
+</body>
+</html>

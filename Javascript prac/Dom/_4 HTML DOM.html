@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTML</title>
+</head>
+
+<body>
+    <h1>JavaScript can change the element </h1>
+    <hr>
+    <!-- ....................... -->
+    <h2> 1 .Changing the HTML Content</h2>
+    <!-- <hr> -->
+
+    <p id="demo"> This paragraph is changed by js </p>
+    <hr>
+
+    <h1 id="demo1">This is a heading now we change this by js</h1>
+    <h1 id="demo2">Another way to change the heading </h1>
+    <hr>
+    <!-- ................................. -->
+
+    <h2> 2. Changing the value of an attributes</h2>
+
+    <img id="img_demo" src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/vUuUtKqDrY9gAbaD2czK9KrN"
+        width="225" height="190"> 
+        <hr>
+<!-- ...................................... -->
+        <h2> 3. HTML Dynamic content </h2>
+        <p id ="demo4"> </p>
+        <p> <b>Dynamic content in the context of HTML and websites refers to website content that constantly or regularly changes based on user interactions, timing and other parameters that determine what content is delivered to the user <b></p>
+<hr>
+<!-- ....................................... -->
+
+<h2> 4. document.write </h2>
+<p><b>In JavaScript, document.write() can be used to write directly to the HTML output stream:</b></p>
+
+<!-- ...................................... -->
+<!-- ...........script -->
+    <script>
+        // change paragraph
+    document.getElementById("demo").innerHTML='change paragarph by js';
+
+         // change heading
+        document.getElementById("demo1").innerHTML='change heading by js' ; 
+
+        // another way: here we make variable element and give access then change it.
+         const element=document.getElementById("demo2");
+        element.innerHTML="another way to change the heading" ; 
+        
+        // image change: here we use src property
+        document.getElementById("img_demo").src="https://media.tenor.com/TReUojNlZ6wAAAAi/js-javascript.gif";
+
+       // add date: dynamic content
+       document.getElementById('demo4').innerHTML='Date: '+Date();
+       
+       // add date by docment.write()
+       document.write(Date());
+        </script>
+</body>
+
+</html>

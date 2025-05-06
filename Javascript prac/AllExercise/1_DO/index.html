@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1_DO</title>
+    <link rel="icon" type="ch1" href="./fv1.png">
+</head>
+<body id="m-body">
+    <div id="m_div">
+    <h1>What Javascript Do ? </h1>
+
+    <p id="h_content">Javascript can change HtMl Content</p>
+    
+    <button onclick='document.getElementById("h_content").innerHTML="It done!"'>Click me</button>
+
+    <br> <hr>
+
+
+    <p>Javascript can change HtMl attributes</p>
+    <button onclick='document.getElementById("img").src="https://www.w3schools.com/js/pic_bulbon.gif"'>Turn On Light</button>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="img" alt="OffLight" srcset="">
+    <button onclick='document.getElementById("img").src="https://www.w3schools.com/js/pic_bulboff.gif"'>Turn off Light</button>
+    <br> <hr>
+
+
+    <p>Javascript can change Css Style</p>
+    <button onclick='document.getElementById("m-body").setAttribute(
+        "style", " background:#77777A; color:white;");
+        '>NightMode</button>
+         <button onclick='document.getElementById("m-body").setAttribute(
+            "style", " background:white; color:black;");
+            '>NightModeOff</button>
+    <br> <hr>
+
+
+    <p>Javascript can hide HtMl element</p>
+    <img src="https://i.giphy.com/l4FGmfnKZRGwtJ4v6.webp" alt="" id="img2">
+    <br>
+    <button onclick='document.getElementById("img2").style.display="none"'>Hide upper image</button>
+    
+    
+    <br>
+    <p>Javascript can show hidden element</p>
+    <button  onclick="document.getElementById('img2').style.display='block'">Display upper image</button>
+
+</div>
+</body>
+</html>
+
+
+<!-- Summarize:
+
+    Here, we learn How the js , change the html doc by some functions.
+
+
+-->

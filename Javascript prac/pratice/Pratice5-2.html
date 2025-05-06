@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice 5-2  </title>
+
+</head>
+<body>
+  
+  <img id="bulb" onclick="func1()" src="pic_bulboff.gif" alt="" width="30%" height="20%"  srcset="">
+
+  <p>Click the light bulb to turn on/off the light.</p>
+
+  <script>
+    function func1
+    {
+      const img = document.getElementById("bulb");
+      if(img.src.match("bulbon"))
+      {
+        img.src="https://www.w3schools.com/js/pic_bulbon.gif";
+        else{
+            img.src="https://www.w3schools.com/js/pic_bulboff.gif";
+        }
+      }
+    }
+  </script>
+</body>
+</html>

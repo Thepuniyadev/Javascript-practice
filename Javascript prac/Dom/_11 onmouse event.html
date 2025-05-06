@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseover event</title>
+</head>
+<body>
+ <h1>Onmouseover and onmouseset event </h1>
+ <div id="demo" onmouseover="mover(this)" onmouseout="mout(this)"  
+ style="background-color: yellow; width: 125px; height: 105px;padding: 75px;">
+Mouse over me </div>
+<hr>
+<h2> onmousedown and onmouseup</h2>
+<div id="demo2" onmousedown="mdown(this)" onmouseup="mup(this)" style="background-color: greenyellow; width: 125px; height: 105px; padding: 72px;"> click me </div>
+
+<!-- ............................................ -->
+<script>
+    function mover(obj)
+    {
+        document.getElementById("demo").style.backgroundColor="red";
+        obj.innerHTML="Huuray!";
+    }
+    function mout(obj)
+    {
+        document.getElementById("demo").style.backgroundColor="yellow";
+        obj.innerHTML= "Mouse over me";
+    }
+
+    // 
+    function mdown(obj){
+        document.getElementById("demo2").style.backgroundColor="blue";
+        obj.innerHTML="release me"
+    }
+    function mup(obj){
+        document.getElementById("demo2").style.backgroundColor="white";
+        obj.innerHTML="click me"
+    }
+</script>
+</body>
+</html>
+
+
+<!-- other events are onmouseset,onmouseover,onfocus.. etc -->

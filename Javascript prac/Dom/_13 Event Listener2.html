@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listener</title>
+</head>
+<body>
+    <p> Function parameter paas </p>
+    <p> click it to perform the operation </p>
+    <button id="id1">click it</button>
+    <p id ="demo1"></p>
+
+
+    <!-- ............................................................. -->
+    <script>
+alert("Write a value for a and b for mathematical operation : ");
+let a= prompt("Enter a value : ");
+a=Number.parseInt(a);
+let b= prompt("Enter b value : ");
+b=Number.parseInt(b);
+
+document.getElementById("id1").addEventListener("click",function(){
+    func(a,b);
+});
+function func(a,b) {
+  document.getElementById("demo1").innerHTML += "The multiplication of a and b is : " +(a * b)+"<br>";
+  document.getElementById("demo1").innerHTML += "The addition of a and b is : " +(a + b)+"<br>";
+  document.getElementById("demo1").innerHTML += "The subtraction of a and b is : " +(a - b)+"<br>";
+  document.getElementById("demo1").innerHTML += "The division of a and b is : " +(a / b)+"<br>";
+}
+    </script>
+</body>
+</html>

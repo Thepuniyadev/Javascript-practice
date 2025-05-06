@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratice 4</title>
+    <style>
+        html,body{
+            height: 100%; width: 100%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul{
+            display: flex;
+        }
+        nav li 
+        {
+          list-style:none;
+          padding: 0 23px;
+          color:Black;
+        }
+
+        table,th,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+    <ul>
+        <li>Home</li> <li>Section</li> <li>Notice</li>
+    </ul>
+   </nav> 
+   <br>
+   <input type="button" onclick="func1()" value="click it to change the color of navbar">
+   <br> <br> 
+<hr>
+<br>
+   <!-- 2. table -->
+
+   <table id="t1" style="width:100%">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>wipro</td>
+      <td>xxx56</td>
+      <td>India</td>
+    </tr>
+    <tr>
+      <td>GOogle</td>
+      <td>yyy69</td>
+      <td>us</td>
+    </tr>
+  </table> <br>
+  <input type="button" onclick="func2()" value="view to page source">
+ <b> <p id="id1"></p> </b>
+ <br> <br>
+ <hr>
+<br><br>
+ <input type="button" onclick="func4()" value="click it to change the color of all &lt;li> tag">
+
+    <!-- .............................................. -->
+<script>
+    let a = document.body; 
+console.log(a.firstElementChild);
+
+function func1()
+{
+    document.body.firstElementChild.style.background="yellow";
+}
+/// q2. script
+function func2(){
+   let t =  document.getElementById("t1");
+   for (var i=0, max=t.length; i < max; i++)
+    {
+      if(t==tbody.length)
+      {
+        document.getElementById("id1").innerHTML="Tbody not found"
+        break;
+      }
+      
+   }
+   document.getElementById("id1").innerHTML="Tbody found"
+}
+
+// q4. script
+function func4()
+{
+  Array.from(document.getElementsByTagName("li")).forEach((element) =>{
+    element.style.background="cyan"
+  })
+}
+</script>
+</body>
+</html>
+
+<!-- Q1. Create a navbar and change the color of its first element to yellow -->
+<!-- q2. create a table without tbody . now use "view page source" button to check whether it has tbody or not -->
+<!-- q4. write a js code to change the background of all <li> tag to color yellow -->

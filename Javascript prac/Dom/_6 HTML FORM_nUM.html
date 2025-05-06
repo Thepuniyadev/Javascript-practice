@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FRM 2</title>
+</head>
+<body>
+    <h2>JS validation 2</h2>
+    <h1>CHECK YOUR AGE TO DRIVE OR NOT </h1>
+    <p style="font-size: large;"><b>Please Enter your age</b></p>
+
+    <input id="num">
+    <button type="button" onclick="num_fun()">submit</button>
+    
+    <p id="demo"></p>    <!--  for print -->
+    
+    <!-- ............................................. -->
+   
+   <script>
+function num_fun()
+{
+    let x = document.getElementById("num").value;
+    let text,diff;
+    if(x<1||x>17)
+    {
+    text="VALID AGE TO DRIVE";
+    } // eoif
+    else{
+        text="NOT VALID AGE TO DRIVE";
+    } // eoelse
+    document.getElementById("demo").innerHTML = text;
+}
+    </script>
+</body>
+</html>
