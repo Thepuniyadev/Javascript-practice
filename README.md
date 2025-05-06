@@ -1,2 +1,2 @@
 # Javascript-practice
-my javascript practice notes 
+my javascript practice notes for revision
